@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<style>
+  /* Ensure the font-family is 'Inter' for all text elements */
+  body { font-family: 'Inter', sans-serif; }
+  .card { background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+  .bar { background: linear-gradient(to top, #4f46e5, #4338ca); }
+</style>
+</head>
+<body class="bg-gray-100">
+
+<!-- Main container -->
+<div class="min-h-screen p-8">
+
+  <div class="flex flex-row">
+      <!-- Profile section -->
+    <div class="mb-10">
+      <div class="flex items-center mb-4">
+        <img src="https://placehold.co/40x40" alt="Profile picture of Mike" class="rounded-full mr-3">
+        <h1 class="text-2xl font-semibold">Hi Mike,</h1>
+        <span class="text-sm text-gray-500 ml-2">welcome back.</span>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+  
+        <!-- Account Balance Card -->
+        <div>
+          <h2 class="text-lg font-semibold mb-2">Today</h2>
+          <p class="text-3xl font-bold mb-2">$19,892</p>
+          <p class="text-sm text-gray-500">Account Balance</p>
+          <div class="mt-4">
+            <div class="flex flex-col justify-between ">
+              <div>
+                <p class="font-bold">$4,000</p>
+                <p class="text-xs text-gray-500">Year-to-Date Contributions</p>
+              </div>
+              <div>
+                <p class="font-bold mt-4">$1,892</p>
+                <p class="text-xs text-gray-500">Total Interest</p>
+              </div>
+            </div>
+            <button class="mt-4 bg-blue-500 text-white rounded py-2 px-4">I want to</button>
+          </div> 
+  
+          <div class="mt-11">
+            <h2 class="text-lg font-semibold mb-4">Recent Transactions</h2>
+            <div>
+              <div class="flex flex-col justify-between py-2 border-b">
+                <p class="text-xs text-gray-500">2020-08-07</p>
+                <p>Withdrawal Transfer to Bank-XX011</p>
+              </div>
+              <div class="flex flex-col justify-between py-2 border-b">
+                <p class="text-xs text-gray-500">2020-07-21</p>
+                <p>Withdrawal Transfer to Bank-XX011</p>
+              </div>
+              <div class="flex flex-col justify-between py-2">
+                <p class="text-xs text-gray-500">2020-07-16</p>
+                <p>Withdrawal Transfer to Bank-XX011</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Transaction History -->
+       
+      </div>
+    </div>    
+    
+     <!-- Statistics Section -->
+  <div class="w-[40%]">
+    <!-- Retirement Income Card -->
+
+    <!-- income div -->
+    <div>
+      <h2 class="text-lg font-semibold text-blue-500">Retirement Income</h2>
+      <h2 class="text-lg font-semibold">Starting Year 2056</h2>
+    </div>
+  <!-- money div -->
+    <div class="flex flex-row">
+      <div class="pr-8 mt-7 ">  
+        <p class="text-3xl font-bold">$300,000</p>
+        <p class="text-sm text-gray-500 mt-2 ">My Goal</p>
+        <div class="w-full bg-gray-200 rounded h-2 mb-2  mt-3">
+          <div class="bar h-2 rounded" style="width: 100%;"></div>
+        </div>
+       
+      </div>
+    
+      <div class="pr-8 mt-7">
+        <p class="text-3xl font-bold">59%</p>
+        <p class="text-sm mt-2 text-gray-500">Goal Achieved</p>
+        <div class="w-full mt-3 bg-gray-200 rounded h-2 mb-2">
+          <div class="bar h-2 rounded" style="width: 100%;"></div>
+        </div>
+      </div>
+
+      <div class="pr-8 mt-7">
+        <p class="text-3xl font-bold">$300</p>
+        <p class="text-sm mt-2 text-gray-500">Est. Monthly Income</p>
+        <div class="w-full mt-3 bg-gray-200 rounded h-2 mb-2">
+          <div class="bar h-2 rounded" style="width: 100%;"></div>
+        </div>
+      </div>
+       
+    </div>
+
+    <div class="flex ">
+      <!-- Contributions Graph -->
+      <div class="my-4">
+        <h3 class="font-semibold mb-2">Contributions Overtime</h3>
+        <!-- Placeholder for Graph -->
+        <img src="https://placehold.co/320x200" alt="Bar chart showing contributions over time" class="w-full h-32 bg-gray-200 rounded">
+      </div>
+    </div>
+     
+     <!-- Comparison Section -->
+    <div class="">
+      <h2 class="text-lg font-semibold mb-4">How do I compare to my peers?</h2>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="text-center">
+          <p class="text-4xl font-bold">78%</p>
+          <p class="text-sm text-gray-500">Average</p>
+        </div>
+        <div class="text-center">
+          <p class="text-4xl font-bold">95%</p>
+          <p class="text-sm text-gray-500">Top</p>
+        </div>
+        <div class="text-center">
+          <p class="text-4xl font-bold">59%</p>
+          <p class="text-sm text-gray-500">Me</p>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+     
+   <!-- Retirement Strategy Card --> 
+  <div class="w-[22%] ml-32">
+    <div class="">
+      <h2 class="text-lg font-semibold mb-4">Retirement Strategy</h2>
+      <div class="flex justify-between items-center mb-2">
+        <p>Employee Contribution</p>
+        <p>12%</p>
+      </div>
+      <div class="flex justify-between items-center mb-2">
+        <p>Retirement Age</p>
+        <p>65</p>
+      </div>
+      <div class="flex justify-between items-center mb-4">
+        <p>Employer Contribution</p>
+        <p>8.4%</p>
+      </div>
+      <div class="flex justify-between items-center mb-4">
+        <p>Interest Rate</p>
+        <p>5%</p>
+      </div>
+      <button class="bg-blue-500 text-white rounded py-2 px-4 mb-2">Update</button>
+      <a href="#" class="text-blue-500 text-sm">View Help Docs ›</a>
+    </div>
+     <!-- Footer decoration -->
+  <div class="mt-10">
+    <img src="https://placehold.co/600x100" alt="Decorative footer element" class="w-full">
+  </div>
+  </div>
+  </div>
+
+  
+
+ 
+  
+
+ 
+
+ 
+  
+
+ 
+
+</div>
+
+</body>
+</html>
